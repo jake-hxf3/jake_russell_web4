@@ -7,10 +7,22 @@ body {
     src: url(../fonts/carbon-bl.otf);
 }
 
+#hero section {
+    color: white;
+}
+
+h2 {
+    font-family: 'Carbon', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .overlap {
     grid-row: 1/-1;
 }
 
 #hero-image {
     z-index: -1;
+}
+
+#logo-con {
+    order: -1;
 }
