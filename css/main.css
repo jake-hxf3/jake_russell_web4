@@ -7,12 +7,25 @@ body {
     src: url(../fonts/carbon-bl.otf);
 }
 
+
 #hero section {
+    align-content: start;
     color: white;
+    background-color: rgba(0,0,0,0.75);
+    padding-top: 10%;
+    padding-bottom: 20%;
+    height: max-content;
 }
 
-h2 {
+#hero h2 {
     font-family: 'Carbon', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: max(44px, 11vw);
+    margin-bottom: 10%;
+}
+
+#hero p {
+    font-size: max(12px, 3vw);
+    line-height: 4.5vw;
 }
 
 .overlap {
@@ -21,8 +34,24 @@ h2 {
 
 #hero-image {
     z-index: -1;
+    aspect-ratio: 206/357;
 }
 
 #logo-con {
+    display: flex;
+    justify-content: space-between;
     order: -1;
+    margin-bottom: 10%;
+}
+
+#logo-con img {
+    flex: 1 1 auto;
+    max-width: 148px;
+    max-height: 65px;
+    background-color: red;
+    object-fit: contain;
+}
+
+#logo-con img:last-child {
+    display: none;
 }
