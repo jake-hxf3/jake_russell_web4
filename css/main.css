@@ -12,16 +12,16 @@ body {
 }
 
 #hero {
-    aspect-ratio: 206/357;
+    height: max-content;
 }
 
 #hero-con {
-    align-content: space-around;
+    align-content: start;
     color: white;
     background-color: rgba(193, 151, 255, 0.75);
-    padding-top: 10%;
-    padding-bottom: 20%;
-    height: 57%;
+    max-height: min-content;
+    padding-top: 11vw;
+    padding-bottom: 11vw;
 }
 
 #hero-text {
@@ -29,21 +29,24 @@ body {
     grid-template-columns: subgrid;
     background-color: rgb(151, 194, 255);
     border: 1px solid black;
+   
 }
 
 #hero h2 {
     font-family: 'Carbon', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 11vw;
-    margin-bottom: 10%;
+    line-height: 10vw;
+    background-color: red;
+    margin-bottom: 8.7vw;
 }
 
 #hero p {
-    font-size: max(12px, 3vw);
+    font-size: min(16px, 3.5vw);
 }
 
 #hero-image {
     z-index: -1;
-    height: 100%;
+    aspect-ratio: 412/630;
 }
 
 #logo-con {
@@ -51,13 +54,13 @@ body {
     justify-content: space-between;
     order: -1;
     background-color: blanchedalmond;
-    margin-bottom: 11%;
+    margin-bottom: 8.5vw;
 }
 
 #logo-con img {
     flex: 1 0 0px;
     max-width: 28%;
-    max-height: 65px;
+    max-height: 14vw;
     background-color: red;
     object-fit: contain;
 }
@@ -74,7 +77,61 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    #hero {
-        aspect-ratio: 768/403;
+    #hero-image {
+        aspect-ratio: unset;
+    }
+
+    #hero-con {
+        align-content: space-around;
+        max-height: unset;
+        height: 43vw;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #hero-text {
+        height: min-content;
+    }
+
+
+    #hero h2 {
+        font-size: 6.25vw;
+        line-height: 6vw;
+        margin-bottom: 3vw;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    #logo-con {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    #logo-con img {
+        max-width: 21%;
+        max-height: 5.8vw;
+    }
+
+    #logo-con img:last-child {
+        display: unset;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #hero-con {
+        max-height: 773px;
+    }
+
+    #hero h2 {
+        font-size: min(78px,5.3vw);
+        line-height: min(82px,5vw);
+        margin-bottom: 28px;
+    }
+
+    #hero p {
+        font-size: 18px;
     }
 }
