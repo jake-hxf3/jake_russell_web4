@@ -13,6 +13,8 @@ body {
 
 #hero {
     height: max-content;
+    margin-top: 8vh;
+    margin-bottom: 50vh;
 }
 
 #hero-con {
@@ -69,6 +71,41 @@ body {
     display: none;
 }
 
+#btn-con {
+    display: none;
+    order: -1;
+    grid-row: 1/2;
+    height: 5vw;
+}
+
+a.btn-link {
+    display: grid;
+    place-items: center;
+    flex: 1 1 0px;
+    max-width: 45%;
+    max-height: 52px;
+    color: black;
+    background-color: dodgerblue;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.311));
+    transition: 0.5s all ease-in-out;
+}
+
+a.btn-link:hover {
+    background-color: rgb(95, 175, 255);
+}
+
+a.gray-btn {
+    background-color: lightgrey;
+}
+
+a.gray-btn:hover {
+    background-color: rgb(157, 157, 157);
+}
+
 @media screen and (max-width: 300px) {
     #hero p {
         height: 0;
@@ -118,6 +155,10 @@ body {
         display: unset;
     }
 
+    #btn-con {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width: 1200px) {
