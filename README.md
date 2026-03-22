@@ -1,7 +1,12 @@
 # Project Name
 ![insert alt text](images/example.jpg)
 
-This is a project about [insert topic].
+This is a project about making a hero section using these techniques:
+* Nested Grid
+* FlexBox
+* Responsive Image
+* Order property
+
 
 ## Installation 💻
 No installation required, simply download the zip file and extract.

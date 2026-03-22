@@ -1,1 +1,16 @@
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
 
+@font-face {
+    font-family: Carbon;
+    src: url(../fonts/carbon-bl.otf);
+}
+
+.overlap {
+    grid-row: 1/-1;
+}
+
+#hero-image {
+    z-index: -1;
+}
