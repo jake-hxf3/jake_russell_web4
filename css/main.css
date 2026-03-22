@@ -7,46 +7,56 @@ body {
     src: url(../fonts/carbon-bl.otf);
 }
 
+.overlap {
+    grid-row: 1/-1;
+}
 
-#hero section {
-    align-content: start;
+#hero {
+    aspect-ratio: 206/357;
+}
+
+#hero-con {
+    align-content: space-around;
     color: white;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(193, 151, 255, 0.75);
     padding-top: 10%;
     padding-bottom: 20%;
-    height: max-content;
+    height: 57%;
+}
+
+#hero-text {
+    display: grid;
+    grid-template-columns: subgrid;
+    background-color: rgb(151, 194, 255);
+    border: 1px solid black;
 }
 
 #hero h2 {
     font-family: 'Carbon', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: max(44px, 11vw);
+    font-size: 11vw;
     margin-bottom: 10%;
 }
 
 #hero p {
     font-size: max(12px, 3vw);
-    line-height: 4.5vw;
-}
-
-.overlap {
-    grid-row: 1/-1;
 }
 
 #hero-image {
     z-index: -1;
-    aspect-ratio: 206/357;
+    height: 100%;
 }
 
 #logo-con {
     display: flex;
     justify-content: space-between;
     order: -1;
-    margin-bottom: 10%;
+    background-color: blanchedalmond;
+    margin-bottom: 11%;
 }
 
 #logo-con img {
-    flex: 1 1 auto;
-    max-width: 148px;
+    flex: 1 0 0px;
+    max-width: 28%;
     max-height: 65px;
     background-color: red;
     object-fit: contain;
@@ -54,4 +64,17 @@ body {
 
 #logo-con img:last-child {
     display: none;
+}
+
+@media screen and (max-width: 300px) {
+    #hero p {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #hero {
+        aspect-ratio: 768/403;
+    }
 }
