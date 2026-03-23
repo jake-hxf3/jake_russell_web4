@@ -1,4 +1,4 @@
-# Project Name
+# Nested Grid & Flexbox
 ![A view of the car showroom](images/car-hero-xl.jpg)
 
 This is a project about making a hero section for a Car Showroom using these techniques:
