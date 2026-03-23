@@ -1,7 +1,7 @@
 # Project Name
-![insert alt text](images/example.jpg)
+![A view of the car showroom](images/car-hero-xl.jpg)
 
-This is a project about making a hero section using these techniques:
+This is a project about making a hero section for a Car Showroom using these techniques:
 * Nested Grid
 * FlexBox
 * Responsive Image
