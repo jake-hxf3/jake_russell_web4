@@ -145,7 +145,7 @@ a.gray-btn:hover {
 
     #hero p {
         font-size: 14px;
-        line-height: 32px;
+        line-height: 24px;
     }
 
     #logo-con {
@@ -182,5 +182,6 @@ a.gray-btn:hover {
 
     #hero p {
         font-size: 18px;
+        line-height: 32px;
     }
 }
